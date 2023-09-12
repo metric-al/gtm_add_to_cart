@@ -74,7 +74,9 @@ const copyFromWindow = require('copyFromWindow');
 const callInWindow = require('callInWindow');
 const getType = require('getType');
 
-const payload = {};
+const payload = {
+  add: null
+};
 if (getType(data.add) === 'array') {
   if (data.add) {
     payload.add = data.add.map((cartObj) => {
