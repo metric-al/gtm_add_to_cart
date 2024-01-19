@@ -35,35 +35,35 @@ ___TEMPLATE_PARAMETERS___
     "name": "add",
     "displayName": "Item(s) Added",
     "simpleValueType": true,
-    "help": "GTM variable representing the item added or list of items added.\nIf only one item is being added, the variable\u0027s value should be an object that includes values representing the following keys: id, quantity, price, sku. Enter the names of the keys representing them in the fields below.\nIf multiple items are being added at once, the variable\u0027s value should be an array of objects, with each object including values representing the following keys: id, quantity, price, sku. Enter the names of the keys representing them in the fields below."
+    "help": "GTM variable representing the item or list of items added.\nIf there will always be only one item added at a time via this action, then the variable\u0027s value should be an object representing the item added that includes values that correspond to the following keys: id, quantity, price, and sku.\nIf there may be multiple items added at a time, then the variable\u0027s value should be an array of objects, with each object including id, quantity, price, and sku.\nRegardless of whether one or multiple items may be added at a time, enter the names of the keys representing the values just mentioned in the fields below."
   },
   {
     "type": "TEXT",
     "name": "cartObjectIdVarName",
     "displayName": "Item Object ID Key Name",
     "simpleValueType": true,
-    "help": "Name of the key on each item object representing the item\u0027s ID. Should just be a name, not a GTM variable. Variable\u0027s value should be a string."
+    "help": "Key that holds the item\u0027s ID on each item object being added. The key\u0027s corresponding value (the ID) should be a string or number."
   },
   {
     "type": "TEXT",
     "name": "cartObjectQuantityVarName",
     "displayName": "Item Object Quantity Key Name",
     "simpleValueType": true,
-    "help": "Name of the key on each item object representing the item\u0027s quantity. Should just be a name, not a GTM variable. Variable\u0027s value should be a number."
+    "help": "Key that holds the item\u0027s quantity on each item object being added. The key\u0027s corresponding value (the quantity) should be a number."
   },
   {
     "type": "TEXT",
     "name": "cartObjectPriceVarName",
     "displayName": "Item Object Price Key Name",
     "simpleValueType": true,
-    "help": "Name of the key on each item object representing the item\u0027s price. Should just be a name, not a GTM variable. Variable\u0027s value should be a number."
+    "help": "Key that holds the item\u0027s price on each item object being added. The key\u0027s corresponding value (the price) should be a number."
   },
   {
     "type": "TEXT",
     "name": "cartObjectSkuVarName",
     "displayName": "Item Object SKU Key Name",
     "simpleValueType": true,
-    "help": "Name of the key on each item object representing the item\u0027s SKU. Should just be a name, not a GTM variable. Variable\u0027s value should be a string."
+    "help": "Key that holds the item\u0027s SKU on each item object being added. The key\u0027s corresponding value (the SKU) should be a string."
   }
 ]
 
